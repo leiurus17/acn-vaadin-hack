@@ -59,7 +59,7 @@ public class HelloComponent extends VerticalLayout{
 				RestTemplate restTemplate = new RestTemplate();
 				
 				restTemplate.postForObject(
-						"https://java-devcon.appspot.com/user/create",
+						"https://xxx.appspot.com/user/create",
 						  employee,
 						  ResponseEntity.class);
 			});
@@ -95,7 +95,7 @@ public class HelloComponent extends VerticalLayout{
 //		companyList.add(new Company("niko", "niko@gmail.com"));
 		
 //		List<Employee> response = restTemplate.getForObject(
-//				  "https://java-devcon.appspot.com/user/lists",
+//				  "https://xxx.appspot.com/user/lists",
 //				  Employee.class);
 //				List<Employee> employees = response.getEmployees();
 		
@@ -106,7 +106,7 @@ public class HelloComponent extends VerticalLayout{
 	
 	RestTemplate restTemplate = new RestTemplate();
 	ResponseEntity<List<Employee>> response = restTemplate.exchange(
-	  "https://java-devcon.appspot.com/user/lists",
+	  "https://xxx.appspot.com/user/lists",
 	  HttpMethod.GET,
 	  null,
 	  new ParameterizedTypeReference<List<Employee>>(){});
